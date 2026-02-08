@@ -1,0 +1,16 @@
+# Project  no 2 (using inheritance)
+# Make a project to guess a random variabler and user check the number is correct
+import random
+n = random.randint(1,100)
+a = -1
+guess= 0
+while(a !=n):
+    guess +=1
+    a = int(input("enter the guess :"))
+    if(a > n):
+        print(" enter the lower number")
+        
+    else:
+        print("enter the highter number")
+        
+print(f" the number is {n} and the choice the correct guess is {guess}")
